@@ -1,5 +1,4 @@
 
-
 (function ($) {
     'use strict';
     /*==================================================================
@@ -67,6 +66,31 @@
     } catch (err) {
         console.log(err);
     }
+
+    const membership = document.getElementById('membershipid')
+    const rel = document.getElementById ('relationshipid')
+    const subj = document.getElementById('subjectid')
+    const form = document.getElementById('form')
+
+    form.addEventListener('submit', (e) => {
+
+        if(subj.value == "Choose option"){
+            alert('Please choose a subject')
+            e.preventDefault()
+        
+        }
+
+        else if(rel.value == "Choose option"){
+            alert('Please provide the relationship')
+            e.preventDefault()
+        
+        }
+
+        else if (membership.value == "Choose option"){
+            alert('Please pick a membership plan')
+            e.preventDefault()
+        }
+    })
     
 
 })(jQuery);

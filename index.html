@@ -28,7 +28,7 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title">Registration Form</h2>
-                    <form action="mainpage.html" method="get">
+                    <form action="#" method="get" id = "form">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
@@ -80,7 +80,7 @@
                         <div class="input-group">
                             <label class="label">Subject</label>
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="subject"  required>
+                                <select name="subject"  required id = "subjectid">
                                     <option disabled="disabled" selected="selected">Choose option</option>
                                     <option>BS Computer Engineering</option>
                                     <option>BS Computer Science</option>
@@ -94,7 +94,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Phone Number</label>
-                                    <input class="input--style-4" type="text" minlength="11" name="phone"  required>
+                                    <input class="input--style-4" type="text" minlength="11" name="phone" pattern = "[0-9]{11}"  required>
                                 </div>
                             </div>
                             <div class="col-2">
@@ -106,19 +106,19 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Personal Email</label>
-                                    <input class="input--style-4" type="email" name="email"  required>
+                                    <input class="input--style-4" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Contact Number</label>
-                                    <input class="input--style-4" type="text" minlength="11" name="phone" required>
+                                    <input class="input--style-4" type="text" minlength="11" name="phone" pattern = "[0-9]{11}" required>
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Student Number</label>
-                                    <input class="input--style-4" minlength="11"type="text"  name="studnum" required>
+                                    <input class="input--style-4" minlength="11"type="text"  name="studnum" pattern = "[0-9]{11}" required>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Contact Number</label>
-                                    <input class="input--style-4" type="text" minlength="11" name="phone" required>
+                                    <input class="input--style-4" type="text" minlength="11" name="phone" pattern = "[0-9]{11}" required>
                                 </div>
                             </div>
                             
@@ -149,7 +149,7 @@
                             <div class="input-group">
                                 <label class="label">Relationship</label>
                                 <div class="rs-select2 js-select-simple select--no-search">
-                                    <select name="subject" required>
+                                    <select name="subject" required id ="relationshipid">
                                         <option disabled="disabled" selected="selected">Choose option</option>
                                         <option>Parent</option>
                                         <option>Guardian</option>
@@ -162,8 +162,8 @@
                                     <h2 class="title">Membership Type</h2>
                                 <div class="col-2">
                                         <label class="label">Type of Membership</label>
-                                        <div class="rs-select2 js-select-simple select--no-search" required>
-                                            <select name="subject">
+                                        <div class="rs-select2 js-select-simple select--no-search">
+                                            <select name="subject" id = "membershipid" required>
                                                 <option disabled="disabled" selected="selected">Choose option</option>
                                                 <option>New</option>
                                                 <option>Renewal</option>
